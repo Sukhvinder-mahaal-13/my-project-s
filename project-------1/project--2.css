@@ -1,0 +1,296 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+background-color: black;
+}
+
+html,
+body{
+width: 100%;
+height: 100%;
+}
+
+#main{
+width: 100%;
+}
+
+/* Cursor */
+
+#minicircle{
+width: 13px;
+height: 13px;
+border-radius: 50%;
+background-color: white;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 99999;
+pointer-events: none;
+transition: all .2s ease;
+}
+
+/* Animation */
+
+.bounding{
+width: fit-content;
+overflow: hidden;
+}
+
+.bounding .boundingelem{
+transform: translateY(100%);
+}
+
+/* Hero Section */
+
+#hero{
+width: 100%;
+height: 100vh;
+color: white;
+position: relative;
+}
+
+#nav{
+width: 100%;
+padding: 25px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#nav a{
+color: white;
+text-decoration: none;
+font-size: 18px;
+}
+
+#heading{
+margin-top: 80px;
+}
+
+#heading h1{
+margin-left: 30px;
+font-size: 9vw;
+line-height: 1;
+text-transform: uppercase;
+opacity: .65;
+}
+
+#Designer{
+padding-left: 180px;
+}
+
+.Designer{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Designer h5{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+/* Small Headings */
+
+.smallheadings{
+    margin-top: 100px;
+    padding-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.smallheadings h5{
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-align: right;
+} 
+/* Hero Footer */
+
+#herofooter{
+width: 100%;
+position: absolute;
+bottom: 30px;
+left: 0;
+padding: 0 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#herofooter a{
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+#iconset{
+display: flex;
+gap: 10px;
+}
+
+.circle{
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background-color: #888;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Projects Section */
+
+#second{
+width: 100%;
+min-height: 100vh;
+color: white;
+padding: 150px 40px;
+}
+.elem{
+    width: 100%;
+    padding: 4vw 0;
+    border-top: 1px solid #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.elemlast{
+    border-bottom: 1px solid #888;
+}
+
+.elem h1{
+    font-size: 8vw;
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+.elem img{
+    position: absolute;
+    z-index: 50;
+
+    height: 120%;
+    width: auto;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+    transition: all .2s  ease;
+}
+/* About Section */
+
+#textabout{
+width: 35%;
+margin-left: auto;
+margin-right: 80px;
+color: white;
+line-height: 1.8;
+padding: 100px 0;
+}
+
+#textabout h5{
+color: #888;
+text-transform: uppercase;
+margin-bottom: 15px;
+}
+
+#textabout a{
+display: inline-block;
+margin-top: 20px;
+padding: 10px 25px;
+border: 1px solid white;
+border-radius: 30px;
+color: white;
+text-decoration: none;
+}
+
+/* Subscribe */
+
+#subscribe{
+color: white;
+padding: 40px;
+}
+
+#subscribe h5{
+opacity: .6;
+text-transform: uppercase;
+}
+
+#subscribe h3{
+margin-top: 10px;
+text-transform: uppercase;
+}
+
+#subscribe a{
+color: white;
+text-decoration: none;
+}
+
+/* Footer */
+
+#a-tag{
+display: flex;
+justify-content: flex-end;
+gap: 25px;
+padding: 0 40px;
+margin-top: 40px;
+}
+
+#a-tag a{
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+#date{
+color: white;
+display: flex;
+gap: 20px;
+padding: 40px;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+
+#heading h1{
+    font-size: 14vw;
+}
+
+#Designer{
+    padding-left: 70px;
+}
+
+.smallheadings h5{
+    font-size: 12px;
+}
+
+#herofooter{
+    flex-direction: column;
+    gap: 20px;
+}
+
+#textabout{
+    width: 90%;
+    margin: auto;
+}
+
+#a-tag{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#date{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+}
