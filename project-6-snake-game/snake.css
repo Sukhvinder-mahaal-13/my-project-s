@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+/* color ke liye */
+    --primary-color:rgb(42, 39, 39);
+    --text-color:rgb(180, 168, 168);
+
+
+    /* space ke liye */
+    --space-padding:4px;
+    --space-sm:8px;
+    --space-md:16px;
+    --spce-lg:20px;
+    --space-2xl:40px;
+    --space-3xl:48px;
+
+    /* border color's  */
+    --border-primary-color:#333333;
+  --border-radius:8px;
+}
+html,
+main{
+    background-color:var(--primary-color) ;
+    color: var(--text-color);
+}
+section{
+    padding: var(--space-2xl);
+    display: flex;
+    flex-direction: column;
+     gap: var(--spce-lg);
+    height: 94vh;
+
+}
+section .infos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.info{
+    padding: var(--space-sm);
+    border: 1px solid var(--border-primary-color);
+    border-radius:var(--border-radius);
+}
+.board{
+    width: 100%;
+    border: 1px solid var(--border-primary-color);
+   flex-grow: 1;
+   display: grid;
+   grid-template-columns: repeat(auto-fill,30px);
+   grid-template-rows: repeat(auto-fill,);
+}
+.block{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border-primary-color);
+}
