@@ -1052,3 +1052,71 @@ display: none;
     }
 
 }
+#service-option-ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    color:#a6a0a0
+}
+
+.footer-4  .delete{
+    
+    width: 20px;
+    height: 20px;
+    padding-bottom: 24px;
+     cursor: pointer;
+}
+.call{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:#1b1b1b;
+
+    padding:18px 25px;
+
+    border-radius:10px;
+
+    border:1px solid #333;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.call:hover{
+
+    background:#423f3f;
+
+    transform:translateY(-5px);
+
+}
+
+.call h6{
+
+    margin-bottom:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.call i{
+
+    margin-right:8px;
+
+}
+
+.call span{
+
+    font-size:18px;
+
+    font-weight:700;
+
+}

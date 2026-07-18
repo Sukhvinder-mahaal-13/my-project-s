@@ -1,0 +1,601 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.nav{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    background:#0b0b0b;
+    border-bottom:1px solid #1f1f1f;
+    z-index:1000;
+}
+
+#img-1{
+    height:100px;
+    position:relative;
+    right:20%;
+}
+
+.nav-bar{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    padding-right:40px;
+}
+
+.nav-a{
+    text-decoration:none;
+    color:#8b8b8b;
+    font-size:19px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-a:hover{
+    color:#fff;
+}
+
+.active{
+    color:#e30613 !important;
+}
+
+.button-1{
+    padding:12px 28px;
+    border:none;
+    border-radius:7px;
+    background:#e30613;
+    color:#fff;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.button-1:hover{
+    background:#b61d1d;
+}
+
+.button-1 i{
+    margin-right:8px;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    width:100%;
+    padding:90px 10%;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.75),
+    rgba(0,0,0,.75)),
+    url("img/main-1.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.hero h4{
+
+    color:#ff4040;
+    letter-spacing:3px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+    margin:20px 0;
+
+}
+
+.hero p{
+
+    max-width:720px;
+    margin:auto;
+    color:#b8b8b8;
+    line-height:30px;
+
+}
+
+/* ===========================
+   PRICING
+=========================== */
+
+.pricing{
+
+    width:90%;
+    margin:80px auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+.price-card{
+
+    background:#1b1b1b;
+    border-radius:15px;
+    padding:40px 30px;
+    text-align:center;
+    position:relative;
+
+    transition:.35s;
+
+}
+
+.price-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.price-card h5{
+
+    color:#ff4040;
+    letter-spacing:2px;
+
+}
+
+.price-card h2{
+
+    font-size:48px;
+    margin:20px 0;
+
+}
+
+.price-card p{
+
+    color:#aaa;
+    margin-bottom:25px;
+
+}
+
+.price-card ul{
+
+    list-style:none;
+    text-align:left;
+    margin-bottom:30px;
+
+}
+
+.price-card ul li{
+
+    margin:15px 0;
+    color:#ddd;
+
+}
+
+.price-card i{
+
+    color:#e30613;
+    margin-right:8px;
+
+}
+
+.price-card button{
+
+    width:100%;
+    padding:14px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#e30613;
+    color:#fff;
+
+    cursor:pointer;
+    transition:.3s;
+
+    font-size:16px;
+    font-weight:600;
+
+}
+
+.price-card button:hover{
+
+    background:#111;
+
+}
+
+/* Featured Card */
+
+.featured{
+
+    border:2px solid #e30613;
+    transform:scale(1.05);
+
+}
+
+.badge-price{
+
+    position:absolute;
+
+    top:-14px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#e30613;
+    padding:8px 20px;
+
+    border-radius:30px;
+
+    font-size:13px;
+    font-weight:600;
+
+}
+/* ===========================
+   COMPARISON TABLE
+=========================== */
+
+.comparison{
+
+    width:90%;
+    margin:90px auto;
+    text-align:center;
+
+}
+
+.comparison h2{
+
+    font-size:42px;
+    margin-bottom:40px;
+
+}
+
+.comparison table{
+
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:12px;
+
+}
+
+.comparison th{
+
+    background:#e30613;
+    color:#fff;
+    padding:18px;
+
+}
+
+.comparison td{
+
+    padding:18px;
+    border:1px solid #2f2f2f;
+    background:#1b1b1b;
+    color:#ddd;
+
+}
+
+.comparison tr:hover td{
+
+    background:#252525;
+
+}
+
+/* ===========================
+   FAQ
+=========================== */
+
+.faq{
+
+    width:90%;
+    margin:90px auto;
+
+}
+
+.faq h2{
+
+    text-align:center;
+    font-size:42px;
+    margin-bottom:40px;
+
+}
+
+.faq-box{
+
+    background:#1b1b1b;
+    border-left:4px solid #e30613;
+
+    padding:25px;
+    margin-bottom:25px;
+
+    border-radius:10px;
+
+}
+
+.faq-box h4{
+
+    margin-bottom:12px;
+    color:#fff;
+
+}
+
+.faq-box p{
+
+    color:#aaa;
+    line-height:28px;
+
+}
+
+/* ===========================
+   CTA
+=========================== */
+
+.cta{
+
+    text-align:center;
+    padding:90px 10%;
+
+}
+
+.cta h2{
+
+    font-size:42px;
+
+}
+
+.cta p{
+
+    max-width:700px;
+    margin:25px auto;
+    color:#9b9b9b;
+    line-height:30px;
+
+}
+
+.cta button{
+
+    border:none;
+    background:#e30613;
+    color:#fff;
+
+    padding:15px 40px;
+    border-radius:8px;
+
+    font-size:18px;
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cta button:hover{
+
+    background:#111;
+
+}
+
+.cta i{
+
+    margin-right:8px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#111;
+    text-align:center;
+    padding:25px;
+
+}
+
+footer p{
+
+    color:#bdbdbd;
+
+}
+
+footer a{
+
+    color:#e30613;
+    text-decoration:none;
+    margin-left:8px;
+
+}
+
+footer a:hover{
+
+    color:#fff;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.nav{
+
+    flex-direction:column;
+    padding:15px;
+
+}
+
+#img-1{
+
+    right:0;
+
+}
+
+.nav-bar{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+    padding:20px 0;
+
+}
+
+.hero{
+
+    padding:70px 20px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.pricing{
+
+    grid-template-columns:1fr;
+    gap:30px;
+
+}
+
+.featured{
+
+    transform:scale(1);
+
+}
+
+.comparison{
+
+    overflow-x:auto;
+
+}
+
+.comparison table{
+
+    min-width:700px;
+
+}
+
+.cta h2{
+
+    font-size:32px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+    padding:60px 20px;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero h4{
+
+    font-size:15px;
+
+}
+
+.price-card{
+
+    padding:28px 20px;
+
+}
+
+.price-card h2{
+
+    font-size:38px;
+
+}
+
+.price-card ul li{
+
+    font-size:15px;
+
+}
+
+.comparison h2,
+.faq h2,
+.cta h2{
+
+    font-size:28px;
+
+}
+
+.cta{
+
+    padding:60px 20px;
+
+}
+
+.cta p{
+
+    font-size:15px;
+
+}
+
+.button-1{
+
+    width:170px;
+
+}
+
+.nav-a{
+
+    font-size:16px;
+
+}
+
+footer{
+
+    padding:18px;
+
+}
+
+footer p{
+
+    font-size:14px;
+
+}
+
+}

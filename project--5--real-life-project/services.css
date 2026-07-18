@@ -1,0 +1,415 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#000000;
+    color:#5f5b5b;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.nav{
+    position: sticky;
+    top:0;
+    background:#0b0b0b;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    z-index:1000;
+}
+#img-1{
+    height:100px;
+    position:relative;
+    right:20%;
+}
+
+.nav-bar{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    padding-right:40px;
+}
+
+.nav-bar .nav-a{
+    text-decoration:none;
+    color:rgb(133,130,130);
+    font-size:20px;
+    font-weight:600;
+    transition:.3s;
+}
+#service:hover{
+color: #b82a20;
+}
+.nav-bar .nav-a:hover{
+    color:#ffffff;
+}
+
+/* Active Page */
+.nav-bar .active{
+    color:red;
+}
+
+/* Button */
+
+.button-1{
+    background:red;
+    color:#fff;
+    border:none;
+    padding:12px 28px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.button-1:hover{
+    background:#b82a20;
+}
+
+.button-1 i{
+    margin-right:8px;
+}
+
+.navbar ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#fff;
+    transition:.3s;
+    font-weight:500;
+}
+
+.navbar a:hover,
+.navbar .active{
+    color:#e30613;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    width:100%;
+    padding:90px 10%;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("img/main-1.jpeg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h4{
+    color:#ff4040;
+    letter-spacing:3px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin:20px 0;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:30px;
+    color:#ddd;
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+
+.services{
+    width:90%;
+    margin:70px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.card{
+    /* background:white; */
+     background-color:#1f1e1e;
+    color:rgb(216, 222, 227);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.content{
+    padding:25px;
+}
+
+.content h2{
+    margin-bottom:15px;
+}
+
+.content p{
+    /* color:#777272; */
+    color:#7d7373;
+    line-height:28px;
+}
+
+.content ul{
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.content li{
+    margin:10px 0;
+     color:#686262;
+    /* color:#444; */
+}
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    margin:25px 0;
+    font-weight:600;
+}
+
+.info i{
+    color:#e30613;
+}
+
+.content button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#e30613;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.content button:hover{
+    background:#111;
+}
+
+/* ===========================
+   WHY CHOOSE
+=========================== */
+
+.why{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.why h2{
+    font-size:38px;
+    margin-bottom:45px;
+}
+
+.why-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.why-box div{
+    /* background:white; */
+    background-color:#1f1e1e;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.why-box div:hover{
+    background:#e30613;
+    color:white;
+}
+
+.why-box div:hover p{
+    color:white;
+}
+
+.why-box i{
+    font-size:45px;
+    color:#e30613;
+    margin-bottom:20px;
+}
+
+.why-box div:hover i{
+    color:white;
+}
+
+.why-box p{
+    color:#666;
+    margin-top:12px;
+}
+
+/* ===========================
+   PROCESS
+=========================== */
+
+.process{
+    background:#111;
+    color:white;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.process h2{
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:30px;
+}
+
+.steps div{
+    background:#222;
+    padding:35px;
+    border-radius:12px;
+}
+
+.steps h1{
+    width:70px;
+    height:70px;
+    background:#e30613;
+    border-radius:50%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   CTA
+=========================== */
+
+.cta{
+    padding:90px 10%;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:42px;
+}
+
+.cta p{
+    margin:20px auto;
+    max-width:650px;
+    color:#666;
+    line-height:30px;
+}
+
+.cta button{
+    padding:15px 40px;
+    border:none;
+    background:#e30613;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cta button:hover{
+    background:#111;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+.navbar ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.why h2,
+.process h2,
+.cta h2{
+    font-size:30px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.services{
+    width:95%;
+}
+
+.card img{
+    height:210px;
+}
+
+.info{
+    flex-direction:column;
+    gap:10px;
+}
+
+}

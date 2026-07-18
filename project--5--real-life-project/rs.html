@@ -16,12 +16,12 @@
 </div>
 <div class="nav-bar">
 <a class="nav-a " id="home" href="#">Home</a>
-<a class="nav-a" href="#main--2">Service</a>
-<a class="nav-a" href="#">About us</a>
-<a class="nav-a" href="#">Gallery</a>
-<a class="nav-a" href="#">Contact</a>
+<a class="nav-a" href="Service.html">Service</a>
+<a class="nav-a" href="about.html">About us</a>
+<a class="nav-a" href="gallery.html">Gallery</a>
+<a class="nav-a" href="Contact.html">Contact</a>
 <div class="button">
-  <a href="#book-now"> <button class="button-1" type="button"><i class="fa-solid fa-calendar-days"></i>BOOK NOW</button></a> 
+  <a href="rs-2.html"> <button class="button-1" type="button"><i class="fa-solid fa-calendar-days"></i>BOOK NOW</button></a> 
 </div>
 </div>
 </div>
@@ -34,13 +34,14 @@
         <h1>KEEP Y<img src="img/weel.jpeg" id="weel">UR CAR <span id="h1-red" >CLEAN &</span>  PERFECT</h1>
         <h6>At RS motors, we give your car the care id deserves. From premium washing to expert repairs, we make your car look and perform like new..</h6>
         <div class="main-button">
-            <button type="button " class="button-1"> 
+            <a href="Service.html"> <button type="button " class="button-1"> 
                 OUR SERVICE <i class="fa-solid fa-arrow-right"></i>
 
-            </button>
-            <button type="button" class="main-button-2">
+            </button></a>
+           <a href="rs-2.html"><button type="button" class="main-button-2">
                 BOOK NOW <i class="fa-solid fa-calendar-days"></i>
-            </button>
+            </button></a>
+            
           <div class="main-icon">
             <h5><i class="fa-solid fa-car main-last-icon"></i> PREMIUM CAR WASH</h5>
              <h5><i class="fa-solid fa-screwdriver-wrench  main-last-icon"></i>Expert MECHANICS</h5>
@@ -106,11 +107,13 @@
 
 <div class="main-3-img">
     
-    <img id="main-3-img" src="img/main-3-.jpeg" alt="">
- <img src="img/light-wali..jpeg"  id="img-light">
+    <img id="main-3-img" class="sound-img" src="img/main-3-.jpeg" alt="">
+ <img src="img/light-wali..jpeg" class="sound-img"  id="img-light">
     
 </div>
-
+<audio id="sound">
+    <source src="img/rs.m4a" type="audio/mp4">
+</audio>
 <div class="main-3-heading">
     <h5>WHY CHOOSE US</h5>
     <h2>BEST SERVICE, EVERY TIME </h2>
@@ -149,20 +152,35 @@
 <img class="footer-img" src="img/ChatGPT Image Jun 25, 2026, 02_09_36 PM.png" alt="">
 <h5>RS Motors is your one-stop solution for car wash, repair,and mainternance. We treat your car like our own.</h5>
 <div class="icon">
- <a href=""><i class="fa-brands fa-facebook-f footer-icon"></i></a>
-    <a href=""><i class="fa-brands fa-instagram footer-icon"></i></a>
-    <a href=""><i class="fa-brands fa-whatsapp footer-icon"></i></a>
-    <a href=""><i class="fa-solid fa-location-dot footer-icon"></i></a>
+ <!-- Facebook -->
+<a href="https://www.facebook.com/" target="_blank">
+    <i class="fa-brands fa-facebook-f footer-icon"></i>
+</a>
+
+<!-- Instagram -->
+<a href="https://www.instagram.com/" target="_blank">
+    <i class="fa-brands fa-instagram footer-icon"></i>
+</a>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/911234567890" target="_blank">
+    <i class="fa-brands fa-whatsapp footer-icon"></i>
+</a>
+
+<!-- Location -->
+<a href="https://maps.google.com/?q=RS+Motors+New+Delhi" target="_blank">
+    <i class="fa-solid fa-location-dot footer-icon"></i>
+</a>
      </div>   </div>
         <div class="footer-2">
             <h3>QUICK  LINKS</h3>
             <div class="a-tag">
             <a href="">Home <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
-            <a href="#main--2">Service  <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
-            <a href="">About Us  <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
-            <a href="">Gallery  <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
-            <a href="">Pricing  <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
-            <a href="">Contact Us  <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
+            <a href="Service.html">Service  <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
+            <a href="about.html">About Us  <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
+            <a href="gallery.html">Gallery  <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
+            <a href="Pricing.html">Pricing  <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
+            <a href="Contact.html">Contact Us  <i class="fa-solid fa-arrow-right footer-2-icon"></i></a>
       </div>  </div>
         <div class="footer-3">
             <h3>OPENING HOURS</h3>
@@ -175,27 +193,34 @@
             <h5>9:00 AM - 5:00 PM</h5>
         </div>
            
-            <div class="call">
-               
-                <h6> <i class="fa-solid fa-phone"></i>CALL US NOW:</h6>
-                +91 1234567890
-            </div>
+          <a href="tel:+911234567890" class="call">
+
+    <h6>
+        <i class="fa-solid fa-phone"></i>
+        CALL US NOW:
+    </h6>
+
+    <span>+91 12345 67890</span>
+
+</a>
         </div>
+        
         <div class="footer-4" id="book-now">
             <h4>BOOK AN APPOINTMENT</h4>
             <div class="book-now">  
                 <input type="text" placeholder="Your Name">
          <input type="number" placeholder="Phone Number" >
-         <select name="Select Service" id="">
-            <option value="" selected disabled hidden>Select Service</option>
-            <option  value="car-wash">Car Wash</option>
-            <option value="interior-cleaning">INTERIOR CLEANING</option>
-            <option value="polish-&-wax"> POLISH & WAX</option>
-            <option value="car-repair">CAR REPAIR</option>
-            <option value="diagnostic-check">DIAGNOSTIC CHECK</option>
-            <option value="all">ALL SERVICE</option>
-            <option value="on-site">I'LL EXPLAIN EVERYTHING ON-SITE.</option>
-         </select>
+<select name="Select Service" id="serviceSelect">
+    <option value="" selected disabled hidden>Select Service</option>
+    <option value="car-wash">Car Wash</option>
+    <option value="interior-cleaning">INTERIOR CLEANING</option>
+    <option value="polish-&-wax">POLISH & WAX</option>
+    <option value="car-repair">CAR REPAIR</option>
+    <option value="diagnostic-check">DIAGNOSTIC CHECK</option>
+    <option value="all">ALL SERVICE</option>
+    <option value="on-site">I'LL EXPLAIN EVERYTHING ON-SITE.</option>
+    <option value="other-option">Other option,s.</option>
+</select>
          <div class="date-wrapper">
     <input type="date" id="date">
     <i class="fa-solid fa-calendar-days"></i>

@@ -1,0 +1,376 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#000000;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.nav{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0b0b0b;
+    padding:0 30px;
+    z-index:1000;
+}
+
+#img-1{
+    height:100px;
+    position:relative;
+    right:20%;
+}
+
+.nav-bar{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    padding-right:40px;
+}
+
+.nav-a{
+    text-decoration:none;
+    color:gray;
+    font-size:19px;
+    font-weight:600;
+    transition:.3s;
+}
+#gallery:hover{
+    color: rgb(115, 18, 18);
+}
+.nav-a:hover{
+    color:white;
+}
+
+.active{
+    color:red;
+}
+
+.button-1{
+    background:red;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.button-1:hover{
+    background:#111;
+    border:1px solid red;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    height:60vh;
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("img/main-1.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.hero h4{
+    color:red;
+    letter-spacing:3px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin:20px 0;
+}
+
+.hero p{
+    width:700px;
+    line-height:30px;
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery{
+    width:90%;
+    margin:70px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.gallery-item img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.12);
+}
+
+.overlay{
+    position:absolute;
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(227,6,19,.85);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    transition:.5s;
+}
+
+.gallery-item:hover .overlay{
+    bottom:0;
+}
+
+.overlay h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.overlay p{
+    font-size:17px;
+}
+
+/* ==========================
+   BEFORE AFTER
+========================== */
+
+.before-after{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.before-after h2{
+    font-size:42px;
+    margin-bottom:45px;
+}
+
+.compare{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+}
+
+.box{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.box img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.box h3{
+    margin-top:18px;
+}
+
+/* ==========================
+   VIDEO
+========================== */
+
+.video-section{
+    width:90%;
+    margin:90px auto;
+    text-align:center;
+}
+
+.video-section h2{
+    font-size:42px;
+}
+
+.video-section p{
+    margin:20px auto;
+    width:700px;
+    line-height:30px;
+    color:#666;
+}
+
+.video-box{
+    margin-top:40px;
+    background:#111;
+    color:white;
+    padding:80px;
+    border-radius:15px;
+}
+
+.video-box i{
+    font-size:90px;
+    color:red;
+    margin-bottom:20px;
+}
+
+.video-box h3{
+    font-size:30px;
+}
+
+/* ==========================
+   CTA
+========================== */
+
+.cta{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta h2{
+    font-size:42px;
+}
+
+.cta p{
+    margin:20px auto;
+    width:700px;
+    line-height:30px;
+}
+
+.cta button{
+    padding:15px 40px;
+    border:none;
+    background:red;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.cta button:hover{
+    background:white;
+    color:black;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#bbb;
+    margin-top:10px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p,
+.video-section p,
+.cta p{
+    width:90%;
+}
+
+.nav{
+    flex-direction:column;
+}
+
+.nav-bar{
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:20px;
+}
+
+#img-1{
+    right:0;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+    height:50vh;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.before-after h2,
+.video-section h2,
+.cta h2{
+    font-size:30px;
+}
+
+.video-box{
+    padding:40px;
+}
+
+.video-box i{
+    font-size:70px;
+}
+
+}
