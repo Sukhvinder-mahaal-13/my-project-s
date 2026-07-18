@@ -3,16 +3,17 @@
     padding: 0;
     
 }
+
 :root{
 /* color ke liye */
     --primary-color:rgb(42, 39, 39);
     --text-color:rgb(180, 168, 168);
-
-
+    --fill-color:#7b6a31;
+--food-color:#a33333;
     /* space ke liye */
     --space-padding:4px;
     --space-sm:8px;
-    --space-md:16px;
+    --space-md:9px;
     --spce-lg:20px;
     --space-2xl:40px;
     --space-3xl:48px;
@@ -26,12 +27,29 @@ main{
     background-color:var(--primary-color) ;
     color: var(--text-color);
 }
+.btn{
+    padding: var(--space-sm) var(--space-md);
+    border:none;
+ background-color: #b4a6a6;
+    cursor: pointer;
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 14.9px;
+}
+.btn:hover{
+    transform: scale(1.1);
+    color:rgb(202, 97, 97);
+    font-weight: 600;
+}
 section{
     padding: var(--space-2xl);
     display: flex;
     flex-direction: column;
      gap: var(--spce-lg);
-    height: 94vh;
+    height: 86vh;
 
 }
 section .infos{
@@ -57,4 +75,34 @@ section .infos{
     width: 30px;
     height: 30px;
     border: 1px solid var(--border-primary-color);
+}
+.fill{
+    background-color: var(--fill-color);
+}
+.food{
+    background-color: var(--food-color);
+}
+.modal{
+height: 100vh;
+width: 100%;
+position: fixed;
+top:0px;
+background-color: #35353587;
+backdrop-filter:blur(4px);
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: 100px;
+}
+.modal .start-game,
+.modal .game-over{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal .game-over{
+    display: none;
+}
+.btn-restart{
+    width: 150px;
 }
